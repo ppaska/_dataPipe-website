@@ -51,10 +51,10 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/home/vkukurba/Development/Projects/upwork/FalconSoft/dataPipe-website/sidebars.js"
+          "sidebarPath": "E:\\Dev\\Projects\\dataPipe-website\\sidebars.js"
         },
         "theme": {
-          "customCss": "/home/vkukurba/Development/Projects/upwork/FalconSoft/dataPipe-website/src/css/custom.css"
+          "customCss": "E:\\Dev\\Projects\\dataPipe-website\\src\\css\\custom.css"
         }
       }
     ]
