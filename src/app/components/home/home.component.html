@@ -1,0 +1,14 @@
+<div class="description">
+  <b>dataPipe</b> is data transformation and analytical library inspired by LINQ (C#) and Pandas - (Python).
+  It provides a facilities for data loading, data transformation and other helpful data manipulation functions.
+  Originally DataPipe project was created to power
+  <a href="https://github.com/jspython-dev/jspython" target="_blank">JSPython</a>
+  and <a href="https://worksheet.systems" target="_blank">Worksheet Systems</a> related projects, but it is also a can be used as a standalone library for your data-driven JavaScript or JSPython applications on both the client (web browser) and server (NodeJS).
+</div>
+
+<h2>Guides</h2>
+<ul>
+  <li *ngFor="let route of guides$ | async">
+    <a [routerLink]="route.route">{{ route.title || route.route }}</a>
+  </li>
+</ul>
