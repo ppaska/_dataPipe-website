@@ -8,7 +8,7 @@
 module.exports = {
   title: 'dataPipe-JS',
   tagline: 'Data transformation and analytical library inspired by LINQ (C#) and Pandas - (Python).',
-  url: 'datapipe-js',
+  url: 'https://datapipe-js.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'FalconSoft', // Usually your GitHub org/user name.
@@ -16,17 +16,12 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'dataPipe-JS',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
       links: [
-        { to: 'docs/doc1', label: 'Guides', position: 'left' },
-        { href: '/api', label: 'API', position: 'left' },
+        { to: 'docs/get-started', label: 'Guides', position: 'left' },
         { to: 'playground', label: 'JSPython Playground', position: 'left' },
         {
           href: 'https://github.com/FalconSoft/dataPipe',
-          label: 'GitHub',
+          className: 'header-github-link',
           position: 'right',
         },
       ],

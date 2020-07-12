@@ -46,7 +46,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
@@ -63,11 +63,11 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome `}
+      description="Data manipulation and processing in JavaScript<head />">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -78,24 +78,44 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/doc1')}>
+              to={useBaseUrl('docs/get-started')}>
               Get Started
             </Link>
           </div>
         </div>
       </header>
       <main>
-        {features && features.length && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <section className={styles.features}>
+          <div className="container">
+            <h2>JavaScript Data Manipulation Library</h2>
+            <p>dataPipe-JS is a data transformation and analytical library inspired by LINQ (C#) and Pandas - (Python) for JavaScript.
+            It provides a facilities for data loading, data transformation and other helpful data manipulation functions.
+            Originally DataPipe project was created to power JSPython and Worksheet Systems related projects, but it is also a can be used
+            as a standalone library for your data-driven JavaScript or JSPython applications on both the client (web browser) and server (NodeJS).
+            </p>
+            <h2>A common Data Management Tasks dataPipeJS</h2>
+            <ul>
+              <li><a hred="/">Getting Started</a></li>
+              <li><a hred="/">Loading Data</a></li>
+              <li><a hred="/">Data Transformation</a></li>
+              <li><a hred="/">Aggregation and other numerical functions</a></li>
+              <li><a hred="/">Output to</a></li>
+              <li><a hred="/">Other helpfull utilities</a></li>
+            </ul>
+            <h2>A common Data Management Tasks dataPipeJS</h2>
+            <ul>
+              <li><a hred="https://www.npmjs.com/package/datapipe-js">NPM Package</a></li>
+              <li><a hred="https://github.com/FalconSoft/dataPipe">A source code on github.com</a></li>
+              <li><a hred="https://www.jsdelivr.com/package/npm/datapipe-js">CDN on jsDelivr.com</a></li>
+            </ul>
+
+            <h2>License</h2>
+            <p>A permissive MIT (c) - FalconSoft Ltd</p>
+
+          </div>
+        </section>
+
+
       </main>
     </Layout>
   );
