@@ -6,24 +6,24 @@
  */
 
 module.exports = {
-  title: 'dataPipe',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'dataPipe-JS',
+  tagline: 'Data transformation and analytical library inspired by LINQ (C#) and Pandas - (Python).',
+  url: 'datapipe-js',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'FalconSoft', // Usually your GitHub org/user name.
-  projectName: 'dataPipe-website', // Usually your repo name.
+  projectName: 'dataPipe-JS-Home', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'dataPipe',
+      title: 'dataPipe-JS',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Guides', position: 'left'},
-        {href: '/api', label: 'API', position: 'left'},
-        {to: 'playground', label: 'JSPython Playground', position: 'left'},
+        { to: 'docs/doc1', label: 'Guides', position: 'left' },
+        { href: '/api', label: 'API', position: 'left' },
+        { to: 'playground', label: 'JSPython Playground', position: 'left' },
         {
           href: 'https://github.com/FalconSoft/dataPipe',
           label: 'GitHub',
