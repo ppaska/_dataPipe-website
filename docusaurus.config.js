@@ -14,6 +14,11 @@ module.exports = {
   organizationName: 'FalconSoft', // Usually your GitHub org/user name.
   projectName: 'dataPipe-JS-Home', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+      defaultLanguage: 'javascript'
+    },    
     navbar: {
       title: 'dataPipe-JS',
       links: [

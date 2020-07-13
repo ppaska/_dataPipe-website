@@ -95,18 +95,18 @@ function Home() {
             </p>
             <h2>A common Data Management Tasks dataPipeJS</h2>
             <ul>
-              <li><a hred="/">Getting Started</a></li>
-              <li><a hred="/">Loading Data</a></li>
-              <li><a hred="/">Data Transformation</a></li>
-              <li><a hred="/">Aggregation and other numerical functions</a></li>
-              <li><a hred="/">Output to</a></li>
-              <li><a hred="/">Other helpfull utilities</a></li>
+              <li><a href="/">Getting Started</a></li>
+              <li><a href="/">Loading Data</a></li>
+              <li><a href="/">Data Transformation</a></li>
+              <li><a href="/">Aggregation and other numerical functions</a></li>
+              <li><a href="/">Output to</a></li>
+              <li><a href="/">Other helpfull utilities</a></li>
             </ul>
             <h2>A common Data Management Tasks dataPipeJS</h2>
             <ul>
-              <li><a hred="https://www.npmjs.com/package/datapipe-js">NPM Package</a></li>
-              <li><a hred="https://github.com/FalconSoft/dataPipe">A source code on github.com</a></li>
-              <li><a hred="https://www.jsdelivr.com/package/npm/datapipe-js">CDN on jsDelivr.com</a></li>
+              <li><a href="https://www.npmjs.com/package/datapipe-js">NPM Package</a></li>
+              <li><a href="https://github.com/FalconSoft/dataPipe">A source code on github.com</a></li>
+              <li><a href="https://www.jsdelivr.com/package/npm/datapipe-js">CDN on jsDelivr.com</a></li>
             </ul>
 
             <h2>License</h2>

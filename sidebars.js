@@ -7,6 +7,7 @@
 
 module.exports = {
   docs: {
-    dataPipeJS: ['get-started']
+    dataPipeJS: ['get-started'],
+    'API References': ['datapipe', 'datapipe-js-array', 'datapipe-js-string', 'datapipe-js-utils']
   },
 };

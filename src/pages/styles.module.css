@@ -10,8 +10,11 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ /*
   background-color: rgb(122, 127, 148);
+*/
+
+.heroBanner {
   padding: 1rem 0;
   text-align: center;
   position: relative;
