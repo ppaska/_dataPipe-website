@@ -23,7 +23,6 @@ module.exports = {
       title: 'dataPipe-JS',
       links: [
         { to: 'docs/get-started', label: 'Guides', position: 'left' },
-        { to: 'playground', label: 'JSPython Playground', position: 'left' },
         {
           href: 'https://github.com/FalconSoft/dataPipe',
           className: 'header-github-link',

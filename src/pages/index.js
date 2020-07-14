@@ -13,61 +13,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const features = [
-  {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
-
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={classnames('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
-
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
     <Layout
       title={`Welcome `}
-      description="Data manipulation and processing in JavaScript<head />">
+      description="Data manipulation and data processing library for JavaScript. Inspired by LINQ (C#) and Pandas (Python). It provides a powerful API for data loading, data transformation and other helpful data manipulation functions.">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -87,22 +39,22 @@ function Home() {
       <main>
         <section className={styles.features}>
           <div className="container">
-            <h2>JavaScript Data Manipulation Library</h2>
-            <p>dataPipe-JS is a data transformation and analytical library inspired by LINQ (C#) and Pandas - (Python) for JavaScript.
-            It provides a facilities for data loading, data transformation and other helpful data manipulation functions.
-            Originally DataPipe project was created to power JSPython and Worksheet Systems related projects, but it is also a can be used
+            <h2>Data Manipulation and data processing library for JavaScript</h2>
+            <p>dataPipe-JS is a data manipulation and data processing library for JavaScript. Main inspirations are coming from LINQ (C#) and Pandas (Python) and carefully brought into JavaScript world.
+            It provides a powerful API for data loading, data transformation and other helpful data manipulation functions.
+            Originally DataPipe project was created to power JSPython and Worksheet Systems related projects. However it also can be used
             as a standalone library for your data-driven JavaScript or JSPython applications on both the client (web browser) and server (NodeJS).
             </p>
-            <h2>A common Data Management Tasks dataPipeJS</h2>
+            <h2>Explore dataPipe-js library</h2>
             <ul>
-              <li><a href="/">Getting Started</a></li>
-              <li><a href="/">Loading Data</a></li>
-              <li><a href="/">Data Transformation</a></li>
-              <li><a href="/">Aggregation and other numerical functions</a></li>
-              <li><a href="/">Output to</a></li>
-              <li><a href="/">Other helpfull utilities</a></li>
+              <li><a href="/docs/get-started">Getting Started</a></li>
+              <li><a href="/docs/datapipe#datapipe-initialization">Data Pipe Initialization</a></li>
+              <li><a href="/docs/datapipe#datapipe-transformation-functions">Data Transformation</a></li>
+              <li><a href="/docs/datapipe#aggregation-and-stats-functions">Aggregation and other numerical functions</a></li>
+              <li><a href="/docs/datapipe#datapipe-output">DataPipe Output</a></li>
+              <li><a href="/docs/datapipe-js-utils">Other helpfull utilities</a></li>
             </ul>
-            <h2>A common Data Management Tasks dataPipeJS</h2>
+            <h2>Resources</h2>
             <ul>
               <li><a href="https://www.npmjs.com/package/datapipe-js">NPM Package</a></li>
               <li><a href="https://github.com/FalconSoft/dataPipe">A source code on github.com</a></li>
