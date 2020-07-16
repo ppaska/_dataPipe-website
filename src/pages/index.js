@@ -56,6 +56,7 @@ function Home() {
             </ul>
             <h2>Resources</h2>
             <ul>
+              <li><a href="https://stackblitz.com/edit/datapipe-js-examples?file=index.js">StackBlitz Examples</a></li>
               <li><a href="https://www.npmjs.com/package/datapipe-js">NPM Package</a></li>
               <li><a href="https://github.com/FalconSoft/dataPipe">A source code on github.com</a></li>
               <li><a href="https://www.jsdelivr.com/package/npm/datapipe-js">CDN on jsDelivr.com</a></li>
