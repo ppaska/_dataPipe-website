@@ -6,22 +6,37 @@ sidebar_label: datapipe-js/utils
 
 ### parseCsv
 
-Parse Csv format into array of items. It automatically recognizes Dates, numbers and booleans. Also, provides number of other options to skip values converts etc
+Parse Csv text into array of items. It automatically recognizes Dates, numbers and booleans. Also, provides number of other options to skip values converts etc
 
 ```js
 parseCsv(content: string, options?: ParsingOptions): ScalarObject[] 
 ```
+Parsing options:
+| Name | Definition | Default Value|
+|------|------------|--------------|
+| delimiter | Define delimiter | ',' |
+| skipRows | Rows to skip | 0 |
+| textFields | a list of text fields what requires NO conversion | [] |
+| dateFields | a list of date fields (string or string[]) e.g. `['Date1', ['Date2', 'MM/dd/yyyy'], ['Date3', 'yyyyMM']]` | [] |
+| numberFields | A list of fields what should be parsed as numbers or stay blank | [] |
+| booleanFields | A list of boolean fields | [] |
+| skipUntil | A callback function to provide skip initial rows. (tokens: string[]) => boolean | |
+| takeWhile | A callback function to provide a take while rows (tokens: string[]) => boolean | |
+| elementSelector | element definition clallback (fieldDescriptions: FieldDescription[], tokens: string[]) => any| |
+
+ > Date and number fields will be converted automatically. In most cases you don't have to confugire fields.  Please use `textFields` property if you don't want some particular field to be converted. Also, use `dateFields` to specify date format e.g. US date: `MM/dd/yyyy`. 
+
 
 ### parseCsvToTable
 
-Parse Csv format into tables of string values. It does not resolves any types, but it provides suggestions. All other features like skipWhile, take while works well there
+Parse Csv text into tables of string values. It does not resolves any types, but it provides suggestions. All other features like skipWhile, take while works well there
 
 ```js
 parseCsvToTable(content: string, options?: ParsingOptions): StringsDataTable
 ```
 
 ### toCsv
-Converts aray to the delimiter (comma) separated value
+Converts array to the delimiter (comma) separated value
 
 ```js
 toCsv(array: ScalarObject[], delimiter = ','): string
